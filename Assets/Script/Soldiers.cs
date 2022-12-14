@@ -6,10 +6,10 @@ public class Soldiers : MonoBehaviour
     float speed = 5f;
     private void Update()
     {
-        float v = Input.GetAxis("Vertical");
-        transform.Translate(new Vector3(1, 0, 0) * Time.deltaTime * speed * v);
-
+        float v = Input.GetAxis("Vertical");     
         float h = Input.GetAxis("Horizontal");
-        transform.Translate(new Vector3(0, 0, 1) * Time.deltaTime * speed * h);
+        
+        Vector3 direction = Vector3.forward * v + Vector3.right * h;    
+        transform.position += direction * speed * Time.deltaTime;
     }
 }
