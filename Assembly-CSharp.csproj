@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Soldiers.cs" />
-    <Compile Include="Assets\Script\PlayTime.cs" />
+    <Compile Include="Assets\Script\TimePlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
